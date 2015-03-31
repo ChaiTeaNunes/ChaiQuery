@@ -1,6 +1,7 @@
 # ThaiQuery
 Quick JQuery access in your JavaScript by using _(ElementId).function
 It avoids using '$' because it may conflict with JQuery itself or other libraries.
+Completely for fun!
 
 ## Usage
 Let's say we have a div with an id of `id` and we want to change the size to 100px by 100px.
