@@ -1,4 +1,4 @@
-# ThaiQuery
+# ChaiQuery
 Quick JQuery access in your JavaScript by using _(ElementId).function
 It avoids using '$' because it may conflict with JQuery itself or other libraries.
 Completely for fun!
