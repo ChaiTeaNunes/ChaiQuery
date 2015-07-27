@@ -24,7 +24,7 @@ THE SOFTWARE.
 */
 
 /* OBJECT CONSTRUCTOR */
-function _(id) {
+function CQ(id) {
 	var about = {
 		Version: 0.1,
 		Author: "Chaiyawat Nunes",
@@ -34,7 +34,7 @@ function _(id) {
 
 	if(id) {
 		if(window === this) {
-			return new _(id);
+			return new CQ(id);
 		}
 		this.obj = document.getElementById(id);
 		return this;
@@ -44,7 +44,7 @@ function _(id) {
 };
 
 /* PROTOTYPE FUNCTIONS */
-_.prototype = {
+CQ.prototype = {
 	// Hide the Element
 	hide: function() {
 		this.obj.style.display = 'none';
@@ -108,25 +108,25 @@ _.prototype = {
 	// Margin (px)
 	marginpx: function(top, right, bottom, left) {
 		this.obj.style.margin = top + 'px ' + right + 'px ' + bottom + 'px ' + left + 'px';
-		return this; 
+		return this;
 	},
 
 	// Margin (%)
 	marginpc: function(top, right, bottom, left) {
 		this.obj.style.margin = top + '% ' + right + '% ' + bottom + '% ' + left + '%';
-		return this; 
+		return this;
 	},
 
 	// Padding (px)
 	paddingpx: function(top, right, bottom, left) {
 		this.obj.style.padding = top + 'px ' + right + 'px ' + bottom + 'px ' + left + 'px';
-		return this; 
+		return this;
 	},
 
 	// Padding (%)
 	paddingpc: function(top, right, bottom, left) {
 		this.obj.style.padding = top + '% ' + right + '% ' + bottom + '% ' + left + '%';
-		return this; 
+		return this;
 	},
 
 	//Toggle Resize
